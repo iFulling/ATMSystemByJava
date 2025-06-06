@@ -47,5 +47,5 @@ CREATE TABLE IF NOT EXISTS transfer_record (
 
 -- 创建默认管理员账户
 INSERT INTO admins (username, password, enabled) 
-VALUES ('admin', 'admin123', true)
+VALUES ('fulling', 'vZM2IUp8cJBVpZbu:x/7Wg42eVn8r3CNQ8pdDiJTBxGBaYZxHzr16lyAuOyk=', true)
 ON DUPLICATE KEY UPDATE username = username; 
