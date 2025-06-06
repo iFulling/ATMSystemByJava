@@ -1,0 +1,257 @@
+五月 27, 2025 8:33:01 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 20:33:01] 收到请求: 127.0.0.1 POST /api/login
+五月 27, 2025 8:33:01 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 20:33:01] 请求处理完成: 127.0.0.1 POST /api/login - 0 (耗时: 9ms)
+五月 27, 2025 8:33:01 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 20:33:01] 处理用户请求: POST /api/login
+五月 27, 2025 8:33:01 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 20:33:01] 登录成功: 123451
+五月 27, 2025 9:17:22 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:17:22] 收到请求: 127.0.0.1 GET /api/register
+五月 27, 2025 9:17:22 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:17:22] 请求处理完成: 127.0.0.1 GET /api/register - 0 (耗时: 20ms)
+五月 27, 2025 9:17:22 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:17:22] 处理用户请求: GET /api/register
+五月 27, 2025 9:18:51 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:18:51] 收到请求: 127.0.0.1 GET /api/login
+五月 27, 2025 9:18:51 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:18:51] 请求处理完成: 127.0.0.1 GET /api/login - 0 (耗时: 1ms)
+五月 27, 2025 9:18:51 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:18:51] 处理用户请求: GET /api/login
+五月 27, 2025 9:19:50 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:19:50] 处理用户请求: POST /api/register
+五月 27, 2025 9:22:44 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:22:44] 收到请求: 127.0.0.1 POST /api/register
+五月 27, 2025 9:22:44 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:22:44] 请求处理完成: 127.0.0.1 POST /api/register - 0 (耗时: 10ms)
+五月 27, 2025 9:22:44 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:22:44] 处理用户请求: POST /api/register
+五月 27, 2025 9:26:19 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:26:19] 收到请求: 127.0.0.1 POST /api/register
+五月 27, 2025 9:26:19 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:26:19] 请求处理完成: 127.0.0.1 POST /api/register - 0 (耗时: 11ms)
+五月 27, 2025 9:26:19 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:26:19] 处理用户请求: POST /api/register
+五月 27, 2025 9:31:03 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:31:03] 收到请求: 127.0.0.1 POST /api/register
+五月 27, 2025 9:31:03 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:31:03] 请求处理完成: 127.0.0.1 POST /api/register (耗时: 11ms)
+五月 27, 2025 9:31:03 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:31:03] 处理用户请求: POST /api/register
+五月 27, 2025 9:34:37 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:34:37] 收到请求: 127.0.0.1 POST /api/register
+五月 27, 2025 9:34:37 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:34:37] 请求处理完成: 127.0.0.1 POST /api/register (耗时: 9ms)
+五月 27, 2025 9:34:37 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:34:37] 处理用户请求: POST /api/register
+五月 27, 2025 9:34:40 下午 handler.UserRequestHandler handleRequest
+警告: [2025-05-27 21:34:40] 请求方法错误: GET /api/register - 只允许 POST 请求
+五月 27, 2025 9:37:14 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:37:14] 处理用户请求: POST /api/register
+五月 27, 2025 9:37:19 下午 handler.UserRequestHandler handleRequest
+严重: 处理请求失败: com.google.gson.stream.MalformedJsonException: Unterminated object at line 2 column 2 path $.body
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 2 column 2 path $.body
+	at com.google.gson.Gson.fromJson(Gson.java:1241)
+	at com.google.gson.Gson.fromJson(Gson.java:1137)
+	at com.google.gson.Gson.fromJson(Gson.java:1047)
+	at com.google.gson.Gson.fromJson(Gson.java:982)
+	at handler.BaseRequestHandler.extractPath(BaseRequestHandler.java:40)
+	at handler.UserRequestHandler.handleRequest(UserRequestHandler.java:39)
+	at server.ClientHandler.handle(ClientHandler.java:98)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at line 2 column 2 path $.body
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1659)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:500)
+	at com.google.gson.stream.JsonReader.hasNext(JsonReader.java:422)
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:779)
+	at com.google.gson.internal.bind.TypeAdapters$28.read(TypeAdapters.java:725)
+	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007)
+	at com.google.gson.Gson.fromJson(Gson.java:1227)
+	... 15 more
+
+五月 27, 2025 9:37:59 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:37:59] 处理用户请求: POST /api/register
+五月 27, 2025 9:38:16 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:38:16] 处理用户请求: POST /api/register
+五月 27, 2025 9:38:23 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:38:23] 处理用户请求: POST /api/register
+五月 27, 2025 9:40:37 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:40:37] 处理用户请求: POST /api/register
+五月 27, 2025 9:46:41 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:46:41] 收到请求: 127.0.0.1 POST /api/register
+五月 27, 2025 9:46:41 下午 middleware.LoggingMiddleware process
+信息: [2025-05-27 21:46:41] 请求处理完成: 127.0.0.1 POST /api/register (耗时: 8ms)
+五月 27, 2025 9:46:41 下午 handler.UserRequestHandler handleRequest
+信息: [2025-05-27 21:46:41] 处理用户请求: POST /api/register
+五月 27, 2025 9:46:41 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 21:46:41] 响应: POST /api/register - 400 {"status":"error","message":"用户名已存在"}
+五月 27, 2025 9:49:13 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 21:49:13] 响应: POST /api/register - 400 {"status":"error","message":"用户名已存在"} (耗时: 60ms)
+五月 27, 2025 10:19:57 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:19:57] 响应: POST /api/register - 400 {"status":"error","message":"用户名已存在"} (耗时: 104ms)
+五月 27, 2025 10:19:59 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:19:59] 响应: POST /api/register - 400 {"status":"error","message":"用户名已存在"} (耗时: 1ms)
+五月 27, 2025 10:20:03 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:20:03] 响应: POST /api/register - 200 {"status":"success","message":"注册成功"} (耗时: 27ms)
+五月 27, 2025 10:20:38 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:20:38] 响应: POST /api/register - 400 {"status":"error","message":"用户名已存在"} (耗时: 7ms)
+五月 27, 2025 10:20:43 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:20:43] 登录成功: 1234151
+五月 27, 2025 10:20:43 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:20:43] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bLu9gma3txYhpaab:wPdqK1hmZ8RDpedM58yOkTS7QEIlH8HgLpcXRiEoLM0\u003d","enabled":true,"balance":0,"permissionsFlags":15,"balanceLock":{},"token":"5bd67f79-8406-4004-ae9f-b1b02f82ddb4"}} (耗时: 28ms)
+五月 27, 2025 10:26:04 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:26:04] 登录成功: 1234151
+五月 27, 2025 10:26:04 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:26:04] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bLu9gma3txYhpaab:wPdqK1hmZ8RDpedM58yOkTS7QEIlH8HgLpcXRiEoLM0\u003d","enabled":true,"balance":0,"permissionsFlags":15,"balanceLock":{},"token":"cfe587e3-c025-4568-a3e6-4b94703afa9f"}} (耗时: 16ms)
+五月 27, 2025 10:27:23 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:27:23] 响应: GET /api/balance - 401 {"status":"error","message":"无效的认证令牌"} (耗时: 0ms)
+五月 27, 2025 10:27:34 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:27:34] 响应: GET /api/balance - 401 {"status":"error","message":"请先登录"} (耗时: 0ms)
+五月 27, 2025 10:27:37 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:27:37] 响应: GET /api/balance - 401 {"status":"error","message":"请先登录"} (耗时: 0ms)
+五月 27, 2025 10:27:43 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:27:43] 登录成功: 1234151
+五月 27, 2025 10:27:43 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:27:43] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bLu9gma3txYhpaab:wPdqK1hmZ8RDpedM58yOkTS7QEIlH8HgLpcXRiEoLM0\u003d","enabled":true,"balance":0,"permissionsFlags":15,"balanceLock":{},"token":"9233b09d-3b19-4341-9d5b-dfff13cee32f"}} (耗时: 17ms)
+五月 27, 2025 10:27:47 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:27:47] 响应: GET /api/balance - 401 {"status":"error","message":"请先登录"} (耗时: 1ms)
+五月 27, 2025 10:27:57 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:27:57] 响应: GET /api/balance - 401 {"status":"error","message":"请先登录"} (耗时: 0ms)
+五月 27, 2025 10:28:52 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:28:52] 响应: GET /api/balance - 401 {"status":"error","message":"请先登录"} (耗时: 27897ms)
+五月 27, 2025 10:29:08 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:29:08] 登录成功: 1234151
+五月 27, 2025 10:29:08 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:29:08] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bLu9gma3txYhpaab:wPdqK1hmZ8RDpedM58yOkTS7QEIlH8HgLpcXRiEoLM0\u003d","enabled":true,"balance":0,"permissionsFlags":15,"balanceLock":{},"token":"5551d13f-65d6-4126-bde9-de7f8ee127fe"}} (耗时: 14ms)
+五月 27, 2025 10:29:15 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:29:15] 响应: GET /api/balance - 200 {"status":"success","message":"0.0"} (耗时: 4ms)
+五月 27, 2025 10:30:10 下午 handler.UserRequestHandler handleRequest
+警告: [2025-05-27 22:30:10] 请求方法错误: GET /api/deposit - 只允许 POST 请求
+五月 27, 2025 10:30:10 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:30:10] 响应: GET /api/deposit - 404 {"status":"error","message":"页面未找到"} (耗时: 5ms)
+五月 27, 2025 10:30:13 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:30:13] 响应: POST /api/deposit - 400 {"status":"error","message":"缺少必填参数: amount"} (耗时: 3ms)
+五月 27, 2025 10:30:31 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:30:31] 响应: POST /api/deposit - 200 {"status":"success","message":"存款成功，当前余额: 12.22"} (耗时: 27ms)
+五月 27, 2025 10:31:13 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:31:13] 响应: POST /api/withdraw - 200 {"status":"success","message":"取款成功，当前余额: 0.0"} (耗时: 31ms)
+五月 27, 2025 10:31:33 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:31:33] 响应: POST /api/deposit - 200 {"status":"success","message":"存款成功，当前余额: 12.22"} (耗时: 22ms)
+五月 27, 2025 10:31:37 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:31:37] 响应: POST /api/withdraw - 200 {"status":"success","message":"取款成功，当前余额: 11.22"} (耗时: 24ms)
+五月 27, 2025 10:32:06 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:32:06] 响应: POST /api/transfer - 400 {"status":"error","message":"缺少必填参数: toUserId"} (耗时: 7ms)
+五月 27, 2025 10:32:23 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:32:23] 响应: POST /api/transfer - 400 {"status":"error","message":"转账失败，请重试"} (耗时: 12ms)
+五月 27, 2025 10:34:26 下午 handler.UserRequestHandler handleRequest
+严重: 处理请求失败: Unknown column 'timestamp' in 'field list'
+java.sql.SQLSyntaxErrorException: Unknown column 'timestamp' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1340)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at dao.UserDAO.transfer(UserDAO.java:245)
+	at handler.UserRequestHandler.handleTransfer(UserRequestHandler.java:321)
+	at handler.UserRequestHandler.handleRequest(UserRequestHandler.java:81)
+	at server.ClientHandler.handle(ClientHandler.java:98)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+五月 27, 2025 10:34:26 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:34:26] 响应: POST /api/transfer - 500 {"status":"error","message":"Unknown column \u0027timestamp\u0027 in \u0027field list\u0027"} (耗时: 30ms)
+五月 27, 2025 10:36:11 下午 handler.UserRequestHandler handleRequest
+严重: 处理请求失败: Unknown column 'permissions_snapshot' in 'field list'
+java.sql.SQLSyntaxErrorException: Unknown column 'permissions_snapshot' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1340)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025)
+	at dao.UserDAO.transfer(UserDAO.java:245)
+	at handler.UserRequestHandler.handleTransfer(UserRequestHandler.java:321)
+	at handler.UserRequestHandler.handleRequest(UserRequestHandler.java:81)
+	at server.ClientHandler.handle(ClientHandler.java:98)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+五月 27, 2025 10:36:11 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:36:11] 响应: POST /api/transfer - 500 {"status":"error","message":"Unknown column \u0027permissions_snapshot\u0027 in \u0027field list\u0027"} (耗时: 15ms)
+五月 27, 2025 10:36:38 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:36:38] 响应: POST /api/transfer - 200 {"status":"success","message":"转账成功"} (耗时: 32ms)
+五月 27, 2025 10:45:48 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:45:48] 响应: POST /api/transfer - 401 {"status":"error","message":"无效的认证令牌"} (耗时: 6ms)
+五月 27, 2025 10:45:54 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:45:54] 响应: POST /api/transfer - 401 {"status":"error","message":"请先登录"} (耗时: 18ms)
+五月 27, 2025 10:45:59 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:45:59] 登录成功: 1234151
+五月 27, 2025 10:45:59 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:45:59] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bLu9gma3txYhpaab:wPdqK1hmZ8RDpedM58yOkTS7QEIlH8HgLpcXRiEoLM0\u003d","enabled":true,"balance":1100,"permissionsFlags":15,"balanceLock":{},"token":"b1dfc9a9-a8a5-4386-a146-5704cfd91cb6"}} (耗时: 58ms)
+五月 27, 2025 10:46:49 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:46:49] 响应: POST /api/transfer - 200 {"status":"success","message":"转账成功"} (耗时: 17ms)
+五月 27, 2025 10:48:29 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:48:29] 响应: POST /api/transfer - 200 {"status":"success","message":"转账成功"} (耗时: 25ms)
+五月 27, 2025 10:48:58 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:48:58] 响应: POST /api/change-password - 400 {"status":"error","message":"缺少必填参数: oldPassword"} (耗时: 9ms)
+五月 27, 2025 10:49:16 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:49:16] 响应: POST /api/change-password - 400 {"status":"error","message":"缺少必填参数: newPassword"} (耗时: 4ms)
+五月 27, 2025 10:49:22 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:49:22] 响应: POST /api/change-password - 400 {"status":"error","message":"密码长度必须在6-20个字符之间"} (耗时: 4ms)
+五月 27, 2025 10:49:29 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:49:29] 响应: POST /api/change-password - 400 {"status":"error","message":"密码长度必须在6-20个字符之间"} (耗时: 3ms)
+五月 27, 2025 10:49:49 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:49:49] 响应: POST /api/change-password - 400 {"status":"error","message":"密码必须包含至少一个特殊字符"} (耗时: 5ms)
+五月 27, 2025 10:49:53 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:49:53] 响应: POST /api/change-password - 200 {"status":"success","message":"密码修改成功"} (耗时: 22ms)
+五月 27, 2025 10:50:01 下午 handler.UserRequestHandler handleLogin
+警告: [2025-05-27 22:50:01] 登录失败: 1234151 - 用户名或密码错误
+五月 27, 2025 10:50:01 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:50:01] 响应: POST /api/login - 401 {"status":"error","message":"用户名或密码错误"} (耗时: 5ms)
+五月 27, 2025 10:50:06 下午 handler.UserRequestHandler handleLogin
+警告: [2025-05-27 22:50:06] 登录失败: 1234151 - 用户名或密码错误
+五月 27, 2025 10:50:06 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:50:06] 响应: POST /api/login - 401 {"status":"error","message":"用户名或密码错误"} (耗时: 6ms)
+五月 27, 2025 10:50:09 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:50:09] 登录成功: 1234151
+五月 27, 2025 10:50:09 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:50:09] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bV6AEZSX93WlesB5:5DVHWz8Mv2IX/uAIvp/ct4W1r8fhjAxhF6RFYVJu5Pw\u003d","enabled":true,"balance":1056,"permissionsFlags":15,"balanceLock":{},"token":"86b042f9-89d2-4123-a27a-d8a54a104168"}} (耗时: 17ms)
+五月 27, 2025 10:51:54 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:51:54] 登录成功: 1234151
+五月 27, 2025 10:51:54 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:51:54] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","password":"bV6AEZSX93WlesB5:5DVHWz8Mv2IX/uAIvp/ct4W1r8fhjAxhF6RFYVJu5Pw\u003d","enabled":true,"balance":1056,"permissionsFlags":15,"balanceLock":{},"token":"af47b39e-6b91-4725-8ee1-fbae01d75290"}} (耗时: 42990ms)
+五月 27, 2025 10:54:41 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:54:41] 登录成功: 1234151
+五月 27, 2025 10:54:41 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:54:41] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","balance":10.56,"token":"5fdbaaca-91d0-4d21-927d-714ce1903e7f"}} (耗时: 81ms)
+五月 27, 2025 10:55:43 下午 handler.UserRequestHandler handleLogin
+信息: [2025-05-27 22:55:43] 登录成功: 1234151
+五月 27, 2025 10:55:43 下午 server.ClientHandler sendResponse
+信息: [2025-05-27 22:55:43] 响应: POST /api/login - 200 {"status":"success","message":{"id":6,"username":"1234151","balance":10.56,"token":"f321dcfb-5ab1-4458-b6a6-49822e3d27e8"}} (耗时: 29487ms)

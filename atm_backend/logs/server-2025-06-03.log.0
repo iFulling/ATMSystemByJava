@@ -1,0 +1,76 @@
+六月 03, 2025 9:36:00 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:36:00] 响应: GET /api/admin/transaction-total-amount - 401 {"status":"error","message":"请先登录"} (耗时: 16ms)
+六月 03, 2025 9:36:00 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:36:00] 响应: GET /api/admin/list-users - 401 {"status":"error","message":"请先登录"} (耗时: 16ms)
+六月 03, 2025 9:36:07 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:36:07] 响应: POST /api/admin/login - 200 {"status":"success","message":{"id":1,"username":"admin","token":"11213700-c5f0-4748-8a8d-d94459ad24a1"}} (耗时: 87ms)
+六月 03, 2025 9:36:07 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:36:07] 响应: GET /api/admin/transaction-total-amount - 200 获取所有交易记录总金额 (耗时: 29ms)
+六月 03, 2025 9:36:07 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:36:07] 响应: GET /api/admin/list-users - 200 获取所有用户 (耗时: 34ms)
+六月 03, 2025 9:36:08 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:36:08] 响应: GET /api/admin/list-users - 200 获取所有用户 (耗时: 24ms)
+六月 03, 2025 9:56:43 下午 handler.AdminRequestHandler handleAdminLogout
+信息: [2025-06-03 21:56:43] 管理员登出成功: 管理员ID 1
+六月 03, 2025 9:56:43 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:56:43] 响应: POST /api/admin/logout - 200 {"status":"success","message":"登出成功"} (耗时: 23ms)
+六月 03, 2025 9:56:56 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 21:56:56] 响应: POST /api/register - 200 {"status":"success","message":"注册成功"} (耗时: 60ms)
+六月 03, 2025 10:00:34 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:00:34] 响应: POST /api/register - 200 {"status":"success","message":"注册成功"} (耗时: 43ms)
+六月 03, 2025 10:00:46 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:00:46] 响应: POST /api/login - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":0.0,"token":"65ca01dd-6ab5-40c0-9026-da48f5f09375"}} (耗时: 26ms)
+六月 03, 2025 10:00:46 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:00:46] 响应: GET /api/balance - 200 {"status":"success","message":"0.0"} (耗时: 23ms)
+六月 03, 2025 10:00:46 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:00:46] 响应: GET /api/profile - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":0.0,"enabled":true,"permissionsFlags":15,"permissions":{"deposit":true,"withdraw":true,"transferOut":true,"transferIn":true}}} (耗时: 25ms)
+六月 03, 2025 10:00:46 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:00:46] 响应: GET /api/profile - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":0.0,"enabled":true,"permissionsFlags":15,"permissions":{"deposit":true,"withdraw":true,"transferOut":true,"transferIn":true}}} (耗时: 11ms)
+六月 03, 2025 10:01:02 下午 handler.UserRequestHandler handleLogout
+信息: [2025-06-03 22:01:02] 登出成功: 用户ID 16
+六月 03, 2025 10:01:02 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:02] 响应: POST /api/logout - 200 {"status":"success","message":"登出成功"} (耗时: 23ms)
+六月 03, 2025 10:01:14 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:14] 响应: POST /api/login - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":0.0,"token":"62dd8ed5-af0b-4251-8c29-7af9892117bc"}} (耗时: 17ms)
+六月 03, 2025 10:01:14 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:14] 响应: GET /api/balance - 200 {"status":"success","message":"0.0"} (耗时: 14ms)
+六月 03, 2025 10:01:14 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:14] 响应: GET /api/profile - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":0.0,"enabled":true,"permissionsFlags":15,"permissions":{"deposit":true,"withdraw":true,"transferOut":true,"transferIn":true}}} (耗时: 30ms)
+六月 03, 2025 10:01:14 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:14] 响应: GET /api/profile - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":0.0,"enabled":true,"permissionsFlags":15,"permissions":{"deposit":true,"withdraw":true,"transferOut":true,"transferIn":true}}} (耗时: 7ms)
+六月 03, 2025 10:01:28 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:28] 响应: GET /api/balance - 200 {"status":"success","message":"0.0"} (耗时: 8ms)
+六月 03, 2025 10:01:31 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:31] 响应: POST /api/deposit - 200 {"status":"success","message":"存款成功，当前余额: 50.0"} (耗时: 35ms)
+六月 03, 2025 10:01:31 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:31] 响应: GET /api/balance - 200 {"status":"success","message":"50.0"} (耗时: 8ms)
+六月 03, 2025 10:01:54 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:54] 响应: GET /api/balance - 200 {"status":"success","message":"50.0"} (耗时: 12ms)
+六月 03, 2025 10:01:56 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:56] 响应: POST /api/withdraw - 200 {"status":"success","message":"取款成功，当前余额: 48.0"} (耗时: 29ms)
+六月 03, 2025 10:01:56 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:01:56] 响应: GET /api/balance - 200 {"status":"success","message":"48.0"} (耗时: 9ms)
+六月 03, 2025 10:02:13 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:02:13] 响应: GET /api/balance - 200 {"status":"success","message":"48.0"} (耗时: 9ms)
+六月 03, 2025 10:02:27 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:02:27] 响应: POST /api/transfer - 200 {"status":"success","message":"转账成功"} (耗时: 263ms)
+六月 03, 2025 10:02:27 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:02:27] 响应: GET /api/balance - 200 {"status":"success","message":"47.0"} (耗时: 10ms)
+六月 03, 2025 10:02:34 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:02:34] 响应: GET /api/profile - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":47.0,"enabled":true,"permissionsFlags":15,"permissions":{"deposit":true,"withdraw":true,"transferOut":true,"transferIn":true}}} (耗时: 10ms)
+六月 03, 2025 10:02:46 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:02:46] 响应: GET /api/profile - 200 {"status":"success","message":{"id":16,"username":"Fulling","balance":47.0,"enabled":true,"permissionsFlags":15,"permissions":{"deposit":true,"withdraw":true,"transferOut":true,"transferIn":true}}} (耗时: 11ms)
+六月 03, 2025 10:03:56 下午 handler.UserRequestHandler handleLogout
+信息: [2025-06-03 22:03:56] 登出成功: 用户ID 16
+六月 03, 2025 10:03:56 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:03:56] 响应: POST /api/logout - 200 {"status":"success","message":"登出成功"} (耗时: 30ms)
+六月 03, 2025 10:04:02 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:04:02] 响应: POST /api/admin/login - 200 {"status":"success","message":{"id":1,"username":"admin","token":"89f2e348-b57e-4d13-8009-10a3922022fc"}} (耗时: 5ms)
+六月 03, 2025 10:04:02 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:04:02] 响应: GET /api/admin/list-users - 200 获取所有用户 (耗时: 38ms)
+六月 03, 2025 10:04:02 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:04:02] 响应: GET /api/admin/transaction-total-amount - 200 获取所有交易记录总金额 (耗时: 34ms)
+六月 03, 2025 10:04:33 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:04:33] 响应: GET /api/admin/list-users - 200 获取所有用户 (耗时: 17ms)
+六月 03, 2025 10:05:14 下午 server.ClientHandler sendResponse
+信息: [2025-06-03 22:05:14] 响应: GET /api/admin/logs - 200 获取日志记录 - 第1页，共23页 (耗时: 30ms)
