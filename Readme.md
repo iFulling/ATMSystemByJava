@@ -22,20 +22,20 @@
 
 用户主页
 
-![1](.\Image\1.png)
+![1](https://github.com/iFulling/ATMSystemByJava/blob/main/Image/1.png)
 
 用户个人信息
 
-![1](.\Image\2.png)
+![1](https://github.com/iFulling/ATMSystemByJava/blob/main/Image/2.png)
 
 管理员主页
 
-![1](.\Image\5.png)
+![1](https://github.com/iFulling/ATMSystemByJava/blob/main/Image/5.png)
 
 用户管理
 
-![1](.\Image\3.png)
+![1](https://github.com/iFulling/ATMSystemByJava/blob/main/Image/3.png)
 
 日志管理
 
-![1](.\Image\4.png)
+![1](https://github.com/iFulling/ATMSystemByJava/blob/main/Image/4.png)
