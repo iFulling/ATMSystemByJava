@@ -8,7 +8,8 @@ public class OperationLog {
     private String operation;
     private LocalDateTime timestamp;
 
-    public OperationLog() {}
+    public OperationLog() {
+    }
 
     public OperationLog(Long id, Long userId, String operation, LocalDateTime timestamp) {
         this.id = id;
@@ -17,17 +18,37 @@ public class OperationLog {
         this.timestamp = timestamp;
     }
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Long getId() {
+        return id;
+    }
 
-    public Long getUserId() { return userId; }
-    public void setUserId(Long userId) { this.userId = userId; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getOperation() { return operation; }
-    public void setOperation(String operation) { this.operation = operation; }
+    public Long getUserId() {
+        return userId;
+    }
 
-    public LocalDateTime getTimestamp() { return timestamp; }
-    public void setTimestamp(LocalDateTime timestamp) { this.timestamp = timestamp; }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getOperation() {
+        return operation;
+    }
+
+    public void setOperation(String operation) {
+        this.operation = operation;
+    }
+
+    public LocalDateTime getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
+    }
 
     @Override
     public String toString() {

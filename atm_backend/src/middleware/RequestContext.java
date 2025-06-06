@@ -3,6 +3,7 @@ package middleware;
 import com.sun.net.httpserver.HttpExchange;
 import model.Admin;
 import model.User;
+
 import java.util.Map;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Map;
  */
 public class RequestContext {
     private static final ThreadLocal<RequestContext> contextHolder = new ThreadLocal<>();
-    
+
     private final HttpExchange exchange;
     private final Map<String, String> headers;
     private String requestBody;

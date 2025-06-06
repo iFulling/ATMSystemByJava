@@ -14,10 +14,11 @@ public class TransferRecord {
     private int permissionsSnapshot;
     private Long logId;
 
-    public TransferRecord() {}
+    public TransferRecord() {
+    }
 
-    public TransferRecord(Long id, Long fromUserId, Long toUserId, BigDecimal amount, 
-                         LocalDateTime timestamp, String remark, String status, int permissionsSnapshot, Long logId) {
+    public TransferRecord(Long id, Long fromUserId, Long toUserId, BigDecimal amount,
+                          LocalDateTime timestamp, String remark, String status, int permissionsSnapshot, Long logId) {
         this.id = id;
         this.fromUserId = fromUserId;
         this.toUserId = toUserId;
@@ -29,32 +30,77 @@ public class TransferRecord {
         this.logId = logId;
     }
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Long getId() {
+        return id;
+    }
 
-    public Long getFromUserId() { return fromUserId; }
-    public void setFromUserId(Long fromUserId) { this.fromUserId = fromUserId; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public Long getToUserId() { return toUserId; }
-    public void setToUserId(Long toUserId) { this.toUserId = toUserId; }
+    public Long getFromUserId() {
+        return fromUserId;
+    }
 
-    public BigDecimal getAmount() { return amount; }
-    public void setAmount(BigDecimal amount) { this.amount = amount; }
+    public void setFromUserId(Long fromUserId) {
+        this.fromUserId = fromUserId;
+    }
 
-    public LocalDateTime getTimestamp() { return timestamp; }
-    public void setTimestamp(LocalDateTime timestamp) { this.timestamp = timestamp; }
+    public Long getToUserId() {
+        return toUserId;
+    }
 
-    public String getRemark() { return remark; }
-    public void setRemark(String remark) { this.remark = remark; }
+    public void setToUserId(Long toUserId) {
+        this.toUserId = toUserId;
+    }
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public BigDecimal getAmount() {
+        return amount;
+    }
 
-    public int getPermissionsSnapshot() { return permissionsSnapshot; }
-    public void setPermissionsSnapshot(int permissionsSnapshot) { this.permissionsSnapshot = permissionsSnapshot; }
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
 
-    public Long getLogId() { return logId; }
-    public void setLogId(Long logId) { this.logId = logId; }
+    public LocalDateTime getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(LocalDateTime timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getPermissionsSnapshot() {
+        return permissionsSnapshot;
+    }
+
+    public void setPermissionsSnapshot(int permissionsSnapshot) {
+        this.permissionsSnapshot = permissionsSnapshot;
+    }
+
+    public Long getLogId() {
+        return logId;
+    }
+
+    public void setLogId(Long logId) {
+        this.logId = logId;
+    }
 
     @Override
     public String toString() {

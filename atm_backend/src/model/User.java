@@ -10,7 +10,7 @@ public class User {
     private boolean enabled;
     private volatile long balance; // 以分为单位存储
     private int permissionsFlags;
-    
+
     // 使用StampedLock控制余额的并发访问
     private final StampedLock balanceLock = new StampedLock();
     // 乐观读锁的超时时间（毫秒）
@@ -25,28 +25,48 @@ public class User {
         this.username = username;
         this.password = password;
         this.enabled = enabled;
-        this.balance = (long)(balance * 100); // 转换为分
+        this.balance = (long) (balance * 100); // 转换为分
         this.permissionsFlags = permissionsFlags;
     }
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Long getId() {
+        return id;
+    }
 
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getPassword() { return password; }
-    public void setPassword(String password) { this.password = password; }
+    public String getUsername() {
+        return username;
+    }
 
-    public boolean isEnabled() { return enabled; }
-    public void setEnabled(boolean enabled) { this.enabled = enabled; }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
 
     // 查询余额（乐观读锁）
     public double getBalance() {
         // 首先尝试乐观读
         long stamp = balanceLock.tryOptimisticRead();
         double currentBalance = balance / 100.0;
-        
+
         // 验证乐观读是否有效
         if (!balanceLock.validate(stamp)) {
             // 如果乐观读失败，尝试获取悲观读锁
@@ -68,33 +88,33 @@ public class User {
         }
         return currentBalance;
     }
-    
+
     // 设置余额（写锁）
     public void setBalance(double balance) {
         long stamp = balanceLock.writeLock();
         try {
-            this.balance = (long)(balance * 100); // 转换为分
+            this.balance = (long) (balance * 100); // 转换为分
         } finally {
             balanceLock.unlockWrite(stamp);
         }
     }
-    
+
     // 原子操作余额的方法
     public double addAndGetBalance(double delta) {
         long stamp = balanceLock.writeLock();
         try {
-            long deltaInCents = (long)(delta * 100);
+            long deltaInCents = (long) (delta * 100);
             balance += deltaInCents;
             return balance / 100.0;
         } finally {
             balanceLock.unlockWrite(stamp);
         }
     }
-    
+
     public double getAndAddBalance(double delta) {
         long stamp = balanceLock.writeLock();
         try {
-            long deltaInCents = (long)(delta * 100);
+            long deltaInCents = (long) (delta * 100);
             double oldBalance = balance / 100.0;
             balance += deltaInCents;
             return oldBalance;
@@ -102,13 +122,13 @@ public class User {
             balanceLock.unlockWrite(stamp);
         }
     }
-    
+
     public boolean compareAndSetBalance(double expect, double update) {
         long stamp = balanceLock.writeLock();
         try {
-            long expectInCents = (long)(expect * 100);
-            long updateInCents = (long)(update * 100);
-            
+            long expectInCents = (long) (expect * 100);
+            long updateInCents = (long) (update * 100);
+
             if (balance == expectInCents) {
                 balance = updateInCents;
                 return true;
@@ -119,8 +139,13 @@ public class User {
         }
     }
 
-    public int getPermissionsFlags() { return permissionsFlags; }
-    public void setPermissionsFlags(int permissionsFlags) { this.permissionsFlags = permissionsFlags; }
+    public int getPermissionsFlags() {
+        return permissionsFlags;
+    }
+
+    public void setPermissionsFlags(int permissionsFlags) {
+        this.permissionsFlags = permissionsFlags;
+    }
 
     // 权限检查方法
     public boolean hasDepositPermission() {
